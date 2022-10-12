@@ -487,6 +487,14 @@ div#mapa{
 
 @media screen and (max-width: 768px) {
 
+    header{
+        height: 0;
+    }
+
+    .logo img{
+        width: 120px;
+    }
+
     .menu-nav{
         display: none;
     }
