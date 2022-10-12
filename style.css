@@ -1,0 +1,526 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+header{
+    background-color: black;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.container-grid{
+    width: 70%;
+    margin: auto;  
+}
+
+.topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topo-redes{
+    display: flex;
+    justify-content: space-between;
+    width: 160px;
+    margin-right: 0;
+}
+
+.topo-redes > a > img{
+    width: 20px;
+}
+
+.topo-redes > a > img:hover{
+    opacity: 0.8;
+}
+
+.webmail a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.webmail > a > img{
+    width: 20px;
+}
+
+.webmail:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+.webmail a:hover{
+    color: white;
+    opacity: 0.8;
+}
+
+/* menu responsivo */
+
+.nav-item {
+    margin: 0 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: black;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+
+.mobile-menu{
+    display: none;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+
+
+.menu-bar{
+    width: 100%;
+}
+
+.itens-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.menu-nav{
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-nav li{
+    list-style: none;
+}
+
+.menu-nav a{
+    color: black;
+    text-transform: uppercase;
+}
+
+.menu-nav a:hover{
+    color: black;
+    opacity: 0.7;
+}
+
+
+.parceiros h2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.img-parceiros{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 60px;
+
+}
+
+.quemsomos{
+    background-image: url(./img/background-quemsomos2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.quemsomos h2{
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.quemsomos p{
+    text-align: justify;
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+section.produtos h2{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.produtos-box{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    padding-bottom: 30px;
+}
+
+.produtos-single{
+    text-align: center;
+    width: 25%;
+    padding: 0 10px;;
+}
+
+.produtos-single h4{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.produtos-single p{
+    margin-top: 7px;
+    text-align: justify;
+    font-size: 12px;
+}
+
+.produtos input[type=submit]{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: gray;
+    padding: 12px 20px ;
+    border: 2px solid gray;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.produtos input[type=submit]:hover{
+    border: 2px solid rgb(179, 177, 177);
+    color: rgb(179, 177, 177);
+
+}
+
+
+section.politica-empresa{
+    background-image: url(img/background-politca-empresa.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.politica-empresa h2{
+    padding-top: 50px;
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.politica-empresa p{
+    color: white;
+    text-align: justify;
+    line-height: 30px;  
+    padding-bottom: 50px;
+    margin-bottom: 0;
+}
+
+
+
+footer{
+    background-color: black;
+}
+
+footer .logo-footer{
+    display: flex;
+    justify-content: center;
+}
+
+footer .logo-footer img{
+    padding-top: 30px;
+    width: 120px;
+    padding-bottom: 30px;
+}
+
+.redes-rodape{
+    display: flex;
+    justify-content: right;
+}
+
+.redes-rodape a{
+    padding: 0 15px;
+}
+
+.copyright p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+    padding-bottom: 20px;
+    padding-top: 30px;
+    margin-bottom: 0;
+}
+
+
+
+/* página contato */
+
+section.contato{
+    padding: 30px 0;
+}
+
+.contato-info h2{
+    color: #202020;
+    font-size: 43px;
+    font-weight: normal;
+}
+
+.contato-info p{
+    color: #202020;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.mapa-container{
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+}
+
+div#mapa{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.contato-form{
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.contato-form input[type=text]{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: solid 1px #e3e3e3;
+    padding-left: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92,99,110,0.1);
+}
+
+.contato-form select{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: solid 1px #e3e3e3;
+    padding-left: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92,99,110,0.1);
+}
+
+.contato-form textarea{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 15px;
+    border: solid 1px #e3e3e3;
+    padding: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92,99,110,0.1);
+    resize: none;
+}
+
+.contato-form input[type=submit]{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: gray;
+    padding: 12px 20px ;
+    border: 2px solid gray;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+}
+
+.contato-form input[type=submit]:hover{
+    border: 2px solid rgb(179, 177, 177);
+    color: rgb(179, 177, 177);
+
+}
+
+/* página cotação */
+
+section.cotacao{
+    padding: 30px 0;
+}
+
+.cotacao-info h2{
+    color: #202020;
+    font-size: 43px;
+    font-weight: normal;
+}
+
+.cotacao-info p{
+    color: #202020;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.mapa-container{
+    width: 100%;
+    padding-top: 70%;
+    position: relative;
+}
+
+div#mapa{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+}
+
+.cotacao-form{
+    padding: 0 30px;
+    margin-top: 20px;
+}
+
+.cotacao-form input[type=text]{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: solid 1px #e3e3e3;
+    padding-left: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92,99,110,0.1);
+}
+
+.cotacao-form select{
+    width: 100%;
+    height: 48px;
+    margin-bottom: 15px;
+    border: solid 1px #e3e3e3;
+    padding-left: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92,99,110,0.1);
+}
+
+.cotacao-form textarea{
+    width: 100%;
+    height: 210px;
+    margin-bottom: 15px;
+    border: solid 1px #e3e3e3;
+    padding: 8px;
+    font-size: 16px;
+    box-shadow: 0 2px 4px 0 rgba(92,99,110,0.1);
+    resize: none;
+}
+
+.cotacao-form input[type=submit]{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background: transparent;
+    color: gray;
+    padding: 12px 20px ;
+    border: 2px solid gray;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    cursor: pointer;
+    width: 200px;
+}
+
+.cotacao-form input[type=submit]:hover{
+    border: 2px solid rgb(179, 177, 177);
+    color: rgb(179, 177, 177);
+
+}
+
+/*
+    CLASSES AUXILIARES
+*/
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;  
+}
+
+.clear{
+    clear: both;
+}
+
+.w50{
+    float: left;
+    width: 50%;
+    padding: 0 15px;
+}
+
+/**/
+
+
+/* scrollreveal */
+
+.produtos h2,
+.quemsomos h2,
+.quemsomos p,
+.produtos-single.one, 
+.produtos-single.two, 
+.produtos-single.three,
+.produtos-single.four,
+.produtos input[type=submit],
+.politica-empresa h2,
+.politica-empresa p,
+.parceiros h2,
+#logoTrend,
+#logoMagna,
+#logoDist{
+    visibility: hidden;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .menu-nav{
+        display: none;
+    }
+    .nav-item {
+        display: block;
+    }
+    
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+   
+    .mobile-menu {
+        width: 100%;
+    }
+    .open {
+        display: block;
+        transition: 0.5s;
+    }
+    
+}
+

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Emiliano Agronegócios</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Raleway:wght@300;400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+</head>
+<body>
+    <header>
+        <div class="container-grid">
+            <div class="topo">
+                <div class="topo-redes">
+                    <a href=""><img src="./img/square-facebook (1).svg" alt=""></a>
+                    <a href=""><img src="./img/instagram (1).svg" alt=""></a>
+                    <a href=""><img src="./img/whatsapp (2) (1).svg" alt=""></a>
+                </div>
+                <div class="webmail">
+                    <a href="https://titan.hostgator.com.br/mail/" target="_blank"><img src="./img/envelope-solid (1).svg" alt=""> Webmail</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="menu-bar">
+        <div class="container-grid">
+            <div class="itens-menu">
+                <div class="logo">
+                    <a href=""><img src="./img/logo-emiliano-agronegocios-colorido.png" alt=""></a>
+                </div>
+
+                
+                <ul class="menu-nav">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Parceiros</a></li>
+                    <li><a href="/cotacao.html">Cotação</a></li>
+                    <li><a href="/contato.html">Contato</a></li>
+                </ul>
+
+                <div class="mobile-menu-icon">
+                    <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+                </div>
+
+                
+            </div>
+            <div class="mobile-menu">
+                <ul>
+                    <li class="nav-item"><a href="#" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Parceiros</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Cotação</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">Contato</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- <section class="video">
+        <video autoplay loop class="bg-video" src="/videos/banner.mp4" type="video/mp4"></video>
+    </section> -->
+
+    <section class="carrossel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+            </ol>
+
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img class="d-block w-100" src="./img/banner-caminhao.jpg" alt="Primeiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Transporte Rodoviário de Cargas</h5>
+                    <p>Transportamos sua carga com rapidez e sergurança</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/banner-cachaça.jpg" alt="Segundo Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Produção de cachaça artesanal</h5>
+                    <p>Transportamos sua carga com rapidez e sergurança</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/banner-manga.jpg" alt="Terceiro Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Produção de manga</h5>
+                    <p>Manga Palmer e Tommy</p>
+                  </div>
+              </div>
+              <div class="carousel-item">
+                <img class="d-block w-100" src="./img/banner-peixe.jpg" alt="Quarto Slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Produção de peixe</h5>
+                    <p>Transportamos sua cargar com rapidez e sergurança</p>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+    <section class="parceiros">
+        <div class="container-grid">
+            <h2>Parceiros</h2>
+            <div class="img-parceiros">
+                <img id="logoTrend" src="img/logo-trendbrasil.png" alt="">
+                <img id="logoMagna" src="img/logo-magna.png" alt="">
+                <img id="logoDist" src="img/logo-emiliano-distribuidora.png" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="quemsomos">
+        <div class="container-grid">
+            <h2>Quem Somos</h2>
+            <p>
+                Atuamos há mais de <b>...</b> anos no segmento de transporte, logística,
+                produção e comercialização de cachaça artesanal, manga palmer/tommy e peixes.  
+                Hoje estamos entre as 10 maiores empresas deste setor no Brasil.
+                Ao longo de nossa trajetória, sempre primamos por oferecer 
+                soluções logísticas customizadas, 
+                oferecendo um portfólio de serviços que atende toda cadeia 
+                logística. Com uma equipe de colaboradores engajados, 
+                filiais e base de apoio estrategicamente posicionadas e
+                veículos equipados com tecnologia embarcada, 
+                geramos segurança e alta produtividade para nossos clientes.
+                A Emiliano Agronegócios é o parceiro ideal para o seu negócio!
+            </p>
+        </div>
+    </section>
+
+
+    <!-- <section class="quemsomos">
+        <h2 class="title">Quem Somos</h2>
+        <div class="quemsomos-texto container">
+            <img src="img/imagem-quemsomos.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt similique expedita distinctio reiciendis facere minima tempora deserunt quos molestias excepturi ab voluptate nulla, rerum voluptates culpa, dicta eius nisi reprehenderit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque assumenda vel laboriosam facilis unde sequi id magni, repellat laudantium hic ipsum dolore distinctio exercitationem suscipit optio quod dicta aspernatur aliquam!</p>
+            
+        </div>
+    </section> -->
+
+    <section class="produtos">
+        <div class="container-grid">
+            <h2>Nossos Produtos e Serviços</h2>
+            <div class="produtos-box">
+                <div class="produtos-single one">
+                    <img src="img/produto-transporte.png" alt="">
+                    <h4>Transporte de Cargas</h4>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi deserunt sequi cum accusantium. Iste obcaecati atque quia repellat nesciunt suscipit totam ipsam cum. Ipsam, vitae. Quisquam commodi ad rem itaque.</p>
+                </div>
+                <div class="produtos-single two">
+                    <img src="img/produto-cachaça.png" alt="">
+                    <h4>Cachaça Artesanal</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt soluta inventore assumenda enim nostrum corporis libero veritatis magni iure dicta esse exercitationem commodi ea tempore sed, quibusdam perspiciatis omnis minus!</p>
+                </div>
+                <div class="produtos-single three">
+                    <img src="img/produto-manga.png" alt="">
+                    <h4>Manga Palmer</h4>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, molestiae? Accusantium eveniet facilis reprehenderit voluptatibus quasi corporis saepe aperiam in molestias ducimus maxime fugiat libero quae, et assumenda fuga necessitatibus.</p>
+                </div>
+                <div class="produtos-single four">
+                    <img src="img/produto-peixe.png" alt="">
+                    <h4>Produção de Peixe</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur dolore accusantium dolorum officiis, quia culpa voluptates? Sequi, quasi voluptates, sapiente soluta officiis ipsa mollitia dignissimos labore adipisci et, est similique?</p>
+                </div>
+            </div>
+            <input type="submit" value="Faça uma Cotação">
+        </div>
+    </section>
+
+    <section class="politica-empresa">
+        <div class="container-grid">
+            <h2>Política da Empresa</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Ipsum corporis nam nobis unde cupiditate impedit est earum optio repellat esse deserunt sed inventore 
+                provident quaerat assumenda rem maxime, doloremque eaque?<br/>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis neque, fugit nesciunt placeat totam nostrum 
+                cupiditate necessitatibus quos adipisci eum distinctio accusantium minima aut modi odit molestiae officiis est magnam!
+                <br>
+                <br>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias fugit id nostrum, soluta quibusdam eum, exercitationem hic impedit voluptatibus ullam dicta facilis aut labore? Hic voluptatibus nobis id quidem odio.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-grid">
+            <div class="logo-footer">
+                <a href=""><img src="img/logo_emiliano_agronegocios_branco.png" alt=""></a>
+            </div>
+            <div class="redes-rodape">
+                <a href=""><img src="./img/square-facebook (1).svg" alt=""></a>
+                <a href=""><img src="./img/instagram (1).svg" alt=""></a>
+                <a href=""><img src="./img/whatsapp (2) (1).svg" alt=""></a>
+            </div>	
+            <div class="copyright">
+				<p>
+                    ©️ Copyright 2022 Emiliano Agronegócios Ltda. <br/>
+                    Todos os direitos reservados.
+                </p>   		
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="jquery.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+    <script src="script.js"></script>
+</body>
+</html> 
