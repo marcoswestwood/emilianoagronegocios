@@ -124,13 +124,19 @@ header{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .img-parceiros{
     display: flex;
     justify-content: space-around;
     padding-bottom: 60px;
+    align-items: center;
+}
 
+.img-parceiros img {
+    max-width: 100%;
+    height: 100%;
 }
 
 .quemsomos{
@@ -146,6 +152,7 @@ header{
     display: flex;
     justify-content: center;
     padding-bottom: 30px;
+    text-align: center;
 }
 
 .quemsomos p{
@@ -158,6 +165,7 @@ section.produtos h2{
     padding-top: 30px;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 .produtos-box{
@@ -487,6 +495,16 @@ div#mapa{
 /* fim do scrolreveal */
 
 
+@media screen and (max-width: 950px) {
+    .produtos-single{
+        text-align: center;
+        width: 50%;
+        padding: 10px 10px;
+        padding-bottom: 30px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
     header{
@@ -527,10 +545,33 @@ div#mapa{
     .mobile-menu {
         width: 100%;
     }
+
+    .img-parceiros img{
+        width: 150px;
+    }
+
+    #logoMagna{
+        width: 100px;
+    }
+
     .open {
         display: block;
-        transition: 0.5s;
     }
-    
+
+}
+
+@media screen and (max-width: 600px) {
+    .produtos-single{
+        width: 100%;
+    }
+
+    .img-parceiros img{
+        width: 100px;
+    }
+
+    #logoMagna{
+        width: 70px;
+    }
+
 }
 
